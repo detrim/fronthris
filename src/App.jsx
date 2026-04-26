@@ -6,12 +6,16 @@ import Absensi from "./absensi/Absensi";
 
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { Helmet } from "react-helmet-async";
 
 function App() {
   const token = localStorage.getItem("token");
 
   return (
     <BrowserRouter>
+    <Helmet>
+        <title>Absensi</title>
+      </Helmet>
       {/* Toast global*/}
       <ToastContainer
         position="top-right"
