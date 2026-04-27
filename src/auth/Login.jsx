@@ -34,8 +34,9 @@ function Login() {
 
       localStorage.setItem("token", Authorization.token);
       localStorage.setItem("user", JSON.stringify(data));
-
-      navigate("/dashboard");
+      setTimeout(() => {
+        navigate("/dashboard");
+      }, 500);
     }
 
     else if (status === "wrong_password") {

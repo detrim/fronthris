@@ -141,12 +141,17 @@ const onScanSuccess = async (decodedText) => {
           </NavLink>
         </li>
         {/* LOGOUT */}
-        <li>
+        {/* <li>
           <button onClick={handleLogout} className="logout-btn">
             Logout
           </button>
-        </li>
+        </li> */}
       </ul>
+        <div className="sidebar-footer">
+          <button onClick={handleLogout} className="logout-btn">
+            Logout
+          </button>
+        </div>
       </aside>
 
       {/* CONTENT */}
